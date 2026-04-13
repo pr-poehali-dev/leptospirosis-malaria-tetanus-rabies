@@ -12,86 +12,177 @@ const NAV_ITEMS = [
 const DISEASES = [
   {
     id: 1,
-    name: "Инфаркт миокарда",
-    category: "Кардиология",
-    stage: "Острое состояние",
-    color: "#C0392B",
-    stages: ["Ишемия", "Некроз", "Реперфузия", "Рубцевание"],
-    description: "Гибель кардиомиоцитов вследствие длительной ишемии миокарда.",
-    symptoms: ["Острая боль за грудиной", "Иррадиация в левую руку", "Холодный пот", "Одышка"],
-    mechanism: "Разрыв атеросклеротической бляшки → тромбоз коронарной артерии → прекращение кровотока → некроз",
+    name: "Лептоспироз",
+    category: "Бактериальная инфекция",
+    pathogen: "Leptospira interrogans",
+    stage: "Зоонозная инфекция",
+    color: "#B7950B",
+    stages: ["Заражение", "Лептоспиремия", "Органные поражения", "Исход"],
+    description: "Острое инфекционное зоонозное заболевание с поражением почек, печени и нервной системы.",
+    transmission: "Контакт с водой или почвой, заражёнными мочой инфицированных животных (грызуны, крупный рогатый скот).",
+    symptoms: [
+      "Острая лихорадка 39–40°C",
+      "Сильная миалгия (особенно икроножных мышц)",
+      "Желтуха (иктерическая форма)",
+      "Геморрагический синдром",
+      "Острая почечная недостаточность",
+      "Конъюнктивит, светобоязнь",
+    ],
+    mechanism: "Проникновение через кожу/слизистые → лептоспиремия (1–2 нед.) → фиксация в органах → иммунная фаза → поражение почек, печени, ЦНС",
+    prevention: "Вакцинация, защитная одежда при контакте с водоёмами, дератизация.",
   },
   {
     id: 2,
-    name: "Сахарный диабет II типа",
-    category: "Эндокринология",
-    stage: "Хроническое течение",
-    color: "#2471A3",
-    stages: ["Резистентность", "Компенсация", "Декомпенсация", "Осложнения"],
-    description: "Хроническое нарушение обмена веществ с инсулинорезистентностью тканей.",
-    symptoms: ["Полиурия", "Полидипсия", "Снижение зрения", "Онемение конечностей"],
-    mechanism: "Инсулинорезистентность → гиперинсулинемия → истощение β-клеток → относительный дефицит инсулина",
+    name: "Малярия",
+    category: "Протозойная инфекция",
+    pathogen: "Plasmodium (P. falciparum, vivax, malariae, ovale)",
+    stage: "Трансмиссивная инфекция",
+    color: "#1A5276",
+    stages: ["Укус комара", "Экзоэритроцитарный цикл", "Эритроцитарный цикл", "Пароксизм"],
+    description: "Протозойное трансмиссивное заболевание, передающееся через укусы комаров рода Anopheles.",
+    transmission: "Укус инфицированного комара рода Anopheles; реже — трансфузионный и вертикальный пути.",
+    symptoms: [
+      "Характерные лихорадочные пароксизмы (озноб → жар → пот)",
+      "Гепатоспленомегалия",
+      "Гемолитическая анемия",
+      "Головная боль, миалгии",
+      "При P. falciparum — церебральная малярия",
+      "Тромбоцитопения",
+    ],
+    mechanism: "Спорозоит → гепатоциты (шизогония) → мерозоиты → эритроциты → разрушение эритроцитов → пироген + анемия → пароксизм каждые 48–72 ч",
+    prevention: "Химиопрофилактика, репелленты, надкроватные сетки, уничтожение мест размножения комаров.",
   },
   {
     id: 3,
-    name: "Бронхиальная астма",
-    category: "Пульмонология",
-    stage: "Хроническое воспаление",
-    color: "#1E8449",
-    stages: ["Триггер", "Спазм", "Воспаление", "Ремиссия"],
-    description: "Хроническое воспалительное заболевание дыхательных путей с обратимой бронхообструкцией.",
-    symptoms: ["Свистящее дыхание", "Приступы удушья", "Кашель ночью", "Одышка при нагрузке"],
-    mechanism: "Аллерген/триггер → дегрануляция тучных клеток → бронхоспазм → воспаление слизистой",
+    name: "Столбняк",
+    category: "Бактериальная инфекция",
+    pathogen: "Clostridium tetani",
+    stage: "Раневая инфекция",
+    color: "#6E2F1A",
+    stages: ["Заражение раны", "Выработка токсина", "Блокада ЦНС", "Судороги"],
+    description: "Острое инфекционное заболевание с поражением нервной системы и генерализованными судорогами, вызванное экзотоксином C. tetani.",
+    transmission: "Споры C. tetani проникают через повреждённую кожу (раны, ожоги, занозы); анаэробные условия необходимы для размножения.",
+    symptoms: [
+      "Тризм жевательных мышц",
+      "Дисфагия",
+      "Опистотонус (дугообразное выгибание тела)",
+      "Генерализованные тонические судороги",
+      "Спазм дыхательной мускулатуры",
+      "Сохранение сознания во время судорог",
+    ],
+    mechanism: "C. tetani в ране → тетаноспазмин → ретроградный транспорт по нейронам → блокада ингибиторных синапсов Реншоу → спастический паралич",
+    prevention: "Активная иммунизация АДС-М; экстренная профилактика при ранениях (противостолбнячная сыворотка + анатоксин).",
+  },
+  {
+    id: 4,
+    name: "Бешенство",
+    category: "Вирусная инфекция",
+    pathogen: "Rabies lyssavirus",
+    stage: "Зоонозная инфекция",
+    color: "#4A235A",
+    stages: ["Укус животного", "Репликация в мышцах", "Проникновение в ЦНС", "Энцефалит"],
+    description: "Острое вирусное зоонозное заболевание с абсолютно летальным исходом при развитии клиники, передаётся через слюну больных животных.",
+    transmission: "Укус или ослюнение повреждённой кожи инфицированным животным (лисы, волки, летучие мыши, собаки, кошки).",
+    symptoms: [
+      "Продромальный период: боль/зуд в месте укуса",
+      "Гидрофобия (спазм глотки при виде воды)",
+      "Аэрофобия",
+      "Психомоторное возбуждение",
+      "Галлюцинации, агрессия",
+      "Паралитическая стадия → кома → смерть",
+    ],
+    mechanism: "Вирус в слюне → мышечные клетки → репликация → нейромышечный синапс → ретроградный аксональный транспорт → ствол мозга → энцефалит",
+    prevention: "Вакцинация после укуса (PEP), вакцинация групп риска, контроль популяций животных.",
   },
 ];
 
 const GLOSSARY_TERMS = [
-  { term: "Ишемия", definition: "Местное уменьшение кровоснабжения ткани вследствие сужения или закупорки артерии." },
-  { term: "Некроз", definition: "Патологическая гибель клеток и тканей в живом организме под воздействием повреждающих факторов." },
-  { term: "Гипоксия", definition: "Недостаточное обеспечение тканей кислородом или нарушение его утилизации." },
-  { term: "Атеросклероз", definition: "Хроническое заболевание артерий с образованием липидных бляшек в их стенках." },
-  { term: "Тромбоз", definition: "Прижизненное свёртывание крови в просвете сосуда с образованием тромба." },
-  { term: "Воспаление", definition: "Защитная реакция организма на повреждение с классическими признаками: rubor, tumor, calor, dolor, functio laesa." },
-  { term: "Инсулинорезистентность", definition: "Снижение чувствительности клеток к действию инсулина при нормальном или повышенном его уровне." },
-  { term: "Бронхоспазм", definition: "Острое сужение просвета бронхов вследствие спазма гладкой мускулатуры их стенки." },
+  { term: "Зооноз", definition: "Инфекционное заболевание, передающееся от животных к человеку естественным путём." },
+  { term: "Лептоспиремия", definition: "Фаза лептоспироза, при которой возбудитель циркулирует в крови, обусловливая острый период заболевания." },
+  { term: "Пароксизм", definition: "Внезапно возникающий и исчезающий приступ (например, лихорадочный при малярии): стадии — озноб, жар, потоотделение." },
+  { term: "Тетаноспазмин", definition: "Нейротоксин Clostridium tetani, блокирующий ингибиторные синапсы спинного мозга и вызывающий генерализованный спазм мышц." },
+  { term: "Тризм", definition: "Тонический спазм жевательных мышц с ограничением открывания рта; ранний и характерный признак столбняка." },
+  { term: "Опистотонус", definition: "Вынужденное положение тела в виде дуги с запрокинутой головой вследствие тонического спазма разгибателей спины." },
+  { term: "Гидрофобия", definition: "Патологический страх воды с рефлекторным спазмом глотки и гортани при её виде или упоминании; патогномоничный симптом бешенства." },
+  { term: "Шизогония", definition: "Бесполое множественное деление плазмодия в клетках хозяина (гепатоцитах, эритроцитах) с высвобождением мерозоитов." },
+  { term: "Мерозоит", definition: "Инвазивная стадия плазмодия, выходящая из разрушенных клеток и способная заражать новые эритроциты." },
+  { term: "Анаэроб", definition: "Микроорганизм, способный жить и размножаться в отсутствие молекулярного кислорода (C. tetani — облигатный анаэроб)." },
+  { term: "PEP", definition: "Постэкспозиционная профилактика — комплекс мероприятий после контакта с источником инфекции; критична при бешенстве." },
+  { term: "Геморрагический синдром", definition: "Патологическая кровоточивость вследствие поражения сосудистой стенки, тромбоцитопении или нарушения коагуляции; характерна для тяжёлого лептоспироза." },
 ];
 
 const TEST_QUESTIONS = [
   {
     id: 1,
-    question: "Какой патогенетический механизм лежит в основе инфаркта миокарда?",
+    question: "Каков основной путь передачи лептоспироза?",
     options: [
-      "Вирусное поражение миокарда",
-      "Тромбоз коронарной артерии",
-      "Воспаление перикарда",
-      "Дефицит кальция",
+      "Воздушно-капельный",
+      "Контакт с водой/почвой, заражёнными мочой грызунов",
+      "Укус комара",
+      "Фекально-оральный",
     ],
     correct: 1,
-    explanation: "Инфаркт миокарда в большинстве случаев развивается вследствие разрыва атеросклеротической бляшки с последующим тромбозом коронарной артерии.",
+    explanation: "Лептоспиры выделяются с мочой инфицированных животных. Заражение происходит при контакте повреждённой кожи или слизистых с заражённой водой или почвой.",
   },
   {
     id: 2,
-    question: "Что такое инсулинорезистентность?",
+    question: "Что происходит в эритроцитарном цикле при малярии?",
     options: [
-      "Полное отсутствие инсулина",
-      "Аллергия на инсулин",
-      "Снижение чувствительности клеток к инсулину",
-      "Избыточная выработка инсулина",
+      "Размножение плазмодия в клетках печени",
+      "Размножение плазмодия в эритроцитах с их последующим разрушением",
+      "Половое размножение в кишечнике комара",
+      "Формирование спорозоитов",
     ],
-    correct: 2,
-    explanation: "Инсулинорезистентность — снижение ответа периферических тканей на действие инсулина при его нормальном или повышенном уровне.",
+    correct: 1,
+    explanation: "В эритроцитарном цикле мерозоиты проникают в эритроциты, размножаются путём шизогонии и разрушают клетку. Высвобождение мерозоитов и пирогенов вызывает характерный лихорадочный пароксизм.",
   },
   {
     id: 3,
-    question: "Какая клетка является ключевой в патогенезе бронхиальной астмы?",
+    question: "Каков механизм действия тетаноспазмина?",
     options: [
-      "Нейтрофил",
-      "Тучная клетка",
-      "Эритроцит",
-      "Остеокласт",
+      "Активация двигательных нейронов",
+      "Блокада ингибиторных синапсов → неконтролируемое возбуждение мотонейронов",
+      "Прямое разрушение мышечных волокон",
+      "Нарушение нейромышечной передачи по типу ботулотоксина",
     ],
     correct: 1,
-    explanation: "Тучные клетки (мастоциты) при контакте с аллергеном дегранулируют, высвобождая медиаторы воспаления (гистамин, лейкотриены), вызывающие бронхоспазм.",
+    explanation: "Тетаноспазмин блокирует высвобождение глицина и ГАМК в ингибиторных интернейронах Реншоу. В результате мотонейроны непрерывно возбуждаются — возникают тонические судороги.",
+  },
+  {
+    id: 4,
+    question: "Какой симптом патогномоничен для бешенства?",
+    options: [
+      "Желтуха",
+      "Тризм",
+      "Гидрофобия",
+      "Пароксизмальная лихорадка",
+    ],
+    correct: 2,
+    explanation: "Гидрофобия — рефлекторный спазм мышц глотки и гортани при виде воды — патогномоничный симптом бешенства, обусловленный поражением ствола мозга.",
+  },
+  {
+    id: 5,
+    question: "Какой вид плазмодия вызывает наиболее тяжёлую малярию с риском церебральных осложнений?",
+    options: [
+      "Plasmodium vivax",
+      "Plasmodium malariae",
+      "Plasmodium falciparum",
+      "Plasmodium ovale",
+    ],
+    correct: 2,
+    explanation: "P. falciparum вызывает тропическую малярию. Поражённые эритроциты экспрессируют белки, вызывающие их адгезию к стенке сосудов мозга, что приводит к церебральной малярии.",
+  },
+  {
+    id: 6,
+    question: "Какое условие необходимо для размножения Clostridium tetani в ране?",
+    options: [
+      "Наличие кислорода",
+      "Влажная поверхность",
+      "Анаэробная (бескислородная) среда",
+      "Щелочная pH среды",
+    ],
+    correct: 2,
+    explanation: "C. tetani — облигатный анаэроб: размножается только без молекулярного кислорода. Глубокие колотые раны, ожоги с некрозом создают необходимую анаэробную среду.",
   },
 ];
 
@@ -111,7 +202,7 @@ function AnimatedProcess({ stages, color }: { stages: string[]; color: string })
         <div key={i} className="flex items-center gap-1 flex-1">
           <div className="flex-1">
             <div
-              className="text-center py-1.5 px-2 rounded text-xs font-mono transition-all duration-500"
+              className="text-center py-1.5 px-1 rounded text-xs font-mono transition-all duration-500"
               style={{
                 background: i === activeStage ? color : "transparent",
                 color: i === activeStage ? "#fff" : "#999",
@@ -123,10 +214,7 @@ function AnimatedProcess({ stages, color }: { stages: string[]; color: string })
             </div>
           </div>
           {i < stages.length - 1 && (
-            <div
-              className="text-xs transition-all duration-500"
-              style={{ color: i < activeStage ? color : "#ddd" }}
-            >
+            <div className="text-xs transition-all duration-500" style={{ color: i < activeStage ? color : "#ddd" }}>
               →
             </div>
           )}
@@ -147,11 +235,11 @@ function DiseaseCard({ disease, onClick }: { disease: typeof DISEASES[0]; onClic
         <span className="text-xs font-mono tracking-widest uppercase" style={{ color: disease.color }}>
           {disease.category}
         </span>
-        <span className="text-xs text-gray-400 font-mono">{disease.stage}</span>
       </div>
-      <h3 className="font-cormorant text-xl font-semibold text-gray-900 mt-1 mb-2 group-hover:text-gray-700">
+      <h3 className="font-cormorant text-xl font-semibold text-gray-900 mt-1 mb-0.5 group-hover:text-gray-700">
         {disease.name}
       </h3>
+      <p className="text-xs font-mono text-gray-400 italic mb-2">{disease.pathogen}</p>
       <p className="text-sm text-gray-500 leading-relaxed mb-3">{disease.description}</p>
       <AnimatedProcess stages={disease.stages} color={disease.color} />
     </div>
@@ -159,7 +247,7 @@ function DiseaseCard({ disease, onClick }: { disease: typeof DISEASES[0]; onClic
 }
 
 function DiseaseModal({ disease, onClose }: { disease: typeof DISEASES[0]; onClose: () => void }) {
-  const [tab, setTab] = useState<"symptoms" | "mechanism">("symptoms");
+  const [tab, setTab] = useState<"symptoms" | "mechanism" | "prevention">("symptoms");
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => e.key === "Escape" && onClose();
@@ -170,27 +258,31 @@ function DiseaseModal({ disease, onClose }: { disease: typeof DISEASES[0]; onClo
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      style={{ background: "rgba(10,10,10,0.6)", backdropFilter: "blur(4px)" }}
+      style={{ background: "rgba(10,10,10,0.65)", backdropFilter: "blur(4px)" }}
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
       <div className="bg-white w-full max-w-xl rounded-sm shadow-2xl overflow-hidden" style={{ animation: "fadeInUp 0.25s ease" }}>
         <div className="px-8 py-6" style={{ borderBottom: `3px solid ${disease.color}` }}>
           <div className="flex justify-between items-start">
             <div>
-              <span className="text-xs font-mono tracking-widest uppercase mb-2 block" style={{ color: disease.color }}>
+              <span className="text-xs font-mono tracking-widest uppercase mb-1 block" style={{ color: disease.color }}>
                 {disease.category}
               </span>
               <h2 className="font-cormorant text-3xl font-semibold text-gray-900">{disease.name}</h2>
+              <p className="text-xs font-mono text-gray-400 italic mt-1">{disease.pathogen}</p>
             </div>
             <button onClick={onClose} className="text-gray-400 hover:text-gray-700 mt-1 transition-colors">
               <Icon name="X" size={20} />
             </button>
           </div>
+          <p className="text-xs font-mono text-gray-500 mt-3">
+            <span className="text-gray-400">Передача: </span>{disease.transmission}
+          </p>
         </div>
 
         <div className="px-8 pt-5 pb-8">
           <div className="flex gap-0 mb-6 border-b border-gray-100">
-            {(["symptoms", "mechanism"] as const).map((t) => (
+            {(["symptoms", "mechanism", "prevention"] as const).map((t) => (
               <button
                 key={t}
                 onClick={() => setTab(t)}
@@ -200,7 +292,7 @@ function DiseaseModal({ disease, onClose }: { disease: typeof DISEASES[0]; onClo
                   color: tab === t ? disease.color : "#999",
                 }}
               >
-                {t === "symptoms" ? "Симптомы" : "Механизм"}
+                {t === "symptoms" ? "Симптомы" : t === "mechanism" ? "Патогенез" : "Профилактика"}
               </button>
             ))}
           </div>
@@ -227,6 +319,12 @@ function DiseaseModal({ disease, onClose }: { disease: typeof DISEASES[0]; onClo
                 {disease.mechanism}
               </p>
               <AnimatedProcess stages={disease.stages} color={disease.color} />
+            </div>
+          )}
+
+          {tab === "prevention" && (
+            <div className="p-4 rounded bg-gray-50 border border-gray-100">
+              <p className="text-sm text-gray-600 font-mono leading-relaxed">{disease.prevention}</p>
             </div>
           )}
         </div>
@@ -270,13 +368,15 @@ function TestSection() {
   };
 
   if (finished) {
+    const pct = Math.round((score / TEST_QUESTIONS.length) * 100);
     return (
       <div className="text-center py-16">
         <div className="font-cormorant text-8xl font-semibold text-gray-900 mb-2">
           {score}/{TEST_QUESTIONS.length}
         </div>
+        <div className="text-xs font-mono text-gray-400 mb-2">{pct}% правильных ответов</div>
         <p className="text-gray-400 font-mono text-sm mb-8">
-          {score === TEST_QUESTIONS.length ? "Отлично! Все ответы верны." : score >= 2 ? "Хороший результат." : "Нужно повторить материал."}
+          {pct === 100 ? "Отличный результат — материал освоен!" : pct >= 67 ? "Хороший результат. Повторите слабые темы." : "Рекомендуем вернуться к теоретическому разделу."}
         </p>
         <button
           onClick={handleRestart}
@@ -299,8 +399,8 @@ function TestSection() {
           {TEST_QUESTIONS.map((_, i) => (
             <div
               key={i}
-              className="w-10 h-1 rounded-full transition-all duration-300"
-              style={{ background: i <= current ? "#1a1a2e" : "#e5e7eb" }}
+              className="w-6 h-1 rounded-full transition-all duration-300"
+              style={{ background: i < current ? "#4ade80" : i === current ? "#1a1a2e" : "#e5e7eb" }}
             />
           ))}
         </div>
@@ -386,9 +486,9 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
           <button onClick={() => setActiveSection("home")} className="flex items-center gap-3">
             <div className="w-6 h-6 rounded-sm flex items-center justify-center" style={{ background: "#1a1a2e" }}>
-              <span className="text-white text-xs font-mono font-bold">М</span>
+              <span className="text-white text-xs font-mono font-bold">И</span>
             </div>
-            <span className="font-cormorant text-lg font-semibold text-gray-900 tracking-tight">МедАтлас</span>
+            <span className="font-cormorant text-lg font-semibold text-gray-900 tracking-tight">ИнфектоАтлас</span>
           </button>
 
           <div className="hidden md:flex items-center gap-1">
@@ -407,10 +507,7 @@ export default function Index() {
             ))}
           </div>
 
-          <button
-            className="md:hidden text-gray-600"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
+          <button className="md:hidden text-gray-600" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <Icon name={mobileMenuOpen ? "X" : "Menu"} size={20} />
           </button>
         </div>
@@ -438,15 +535,15 @@ export default function Index() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <span className="text-xs font-mono tracking-widest text-gray-400 uppercase mb-4 block">
-                  Образовательный портал · Медицина
+                  Образовательный портал · Инфектология
                 </span>
                 <h1 className="font-cormorant text-6xl md:text-7xl font-semibold text-gray-900 leading-none mb-6">
                   Изучайте<br />
-                  <em className="not-italic" style={{ color: "#C0392B" }}>патогенез</em><br />
-                  заболеваний
+                  <em className="not-italic" style={{ color: "#1A5276" }}>инфекционные</em><br />
+                  заболевания
                 </h1>
                 <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-md">
-                  Интерактивные схемы, анимированные механизмы развития болезней и системные тесты для глубокого понимания медицинских процессов.
+                  Интерактивные схемы патогенеза, клиническая картина и профилактика лептоспироза, малярии, столбняка и бешенства.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <button
@@ -465,33 +562,30 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {DISEASES.map((d) => (
                   <div
                     key={d.id}
                     className="flex items-center gap-4 p-4 rounded-sm border border-gray-100 hover:border-gray-200 cursor-pointer transition-all duration-200 group"
                     onClick={() => { setSelectedDisease(d); setActiveSection("theory"); }}
                   >
-                    <div className="w-2 h-12 rounded-full flex-shrink-0" style={{ background: d.color }} />
+                    <div className="w-2 h-10 rounded-full flex-shrink-0" style={{ background: d.color }} />
                     <div className="flex-1 min-w-0">
                       <div className="font-cormorant text-lg font-semibold text-gray-800 group-hover:text-gray-900">{d.name}</div>
-                      <div className="text-xs font-mono text-gray-400 mt-0.5">{d.category}</div>
+                      <div className="text-xs font-mono text-gray-400 mt-0.5 italic">{d.pathogen}</div>
                     </div>
                     <Icon name="ChevronRight" size={16} className="text-gray-300 group-hover:text-gray-500 transition-colors" />
                   </div>
                 ))}
-                <div className="text-center pt-2">
-                  <span className="text-xs font-mono text-gray-300">— 3 нозологии в базе —</span>
-                </div>
               </div>
             </div>
 
             <div className="mt-20 pt-10 border-t border-gray-100 grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { num: "5", label: "Разделов" },
-                { num: "3", label: "Нозологии" },
-                { num: "8", label: "Терминов" },
-                { num: "3", label: "Тестовых вопроса" },
+                { num: "4", label: "Нозологии" },
+                { num: "6", label: "Тестовых вопросов" },
+                { num: "12", label: "Терминов" },
+                { num: "3", label: "Вкладки на тему" },
               ].map((s) => (
                 <div key={s.label} className="text-center">
                   <div className="font-cormorant text-4xl font-semibold text-gray-900">{s.num}</div>
@@ -510,10 +604,10 @@ export default function Index() {
             <div className="mb-10">
               <span className="text-xs font-mono tracking-widest text-gray-400 uppercase mb-2 block">Раздел 01</span>
               <h2 className="font-cormorant text-5xl font-semibold text-gray-900">Теория</h2>
-              <p className="text-gray-500 mt-2 text-sm font-mono">Патогенез и клиническая картина заболеваний</p>
+              <p className="text-gray-500 mt-2 text-sm font-mono">Патогенез, клиника и профилактика инфекционных заболеваний</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {DISEASES.map((d) => (
                 <DiseaseCard key={d.id} disease={d} onClick={() => setSelectedDisease(d)} />
               ))}
@@ -527,7 +621,7 @@ export default function Index() {
                 <div>
                   <div className="font-cormorant text-xl font-semibold text-gray-900 mb-1">Как пользоваться разделом</div>
                   <p className="text-sm text-gray-500 font-mono leading-relaxed">
-                    Нажмите на карточку болезни, чтобы изучить подробный механизм развития и клинические симптомы. Анимации отображают последовательность патогенетических этапов в реальном времени.
+                    Нажмите на карточку заболевания, чтобы открыть подробное описание. Три вкладки: симптомы, патогенез с анимацией стадий и меры профилактики.
                   </p>
                 </div>
               </div>
@@ -543,25 +637,26 @@ export default function Index() {
             <div className="mb-10">
               <span className="text-xs font-mono tracking-widest text-gray-400 uppercase mb-2 block">Раздел 02</span>
               <h2 className="font-cormorant text-5xl font-semibold text-gray-900">Практика</h2>
-              <p className="text-gray-500 mt-2 text-sm font-mono">Клинические разборы и диагностические задачи</p>
+              <p className="text-gray-500 mt-2 text-sm font-mono">Клинические разборы и дифференциальная диагностика</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {DISEASES.map((d, i) => (
                 <div key={d.id} className="p-6 border border-gray-100 rounded-sm" style={{ borderLeft: `3px solid ${d.color}` }}>
-                  <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-start justify-between mb-4 gap-2">
                     <div>
                       <span className="text-xs font-mono tracking-widest uppercase mb-1 block" style={{ color: d.color }}>
                         Клинический случай №{i + 1}
                       </span>
                       <h3 className="font-cormorant text-2xl font-semibold text-gray-900">{d.name}</h3>
+                      <p className="text-xs font-mono text-gray-400 italic mt-0.5">{d.pathogen}</p>
                     </div>
-                    <span className="text-xs font-mono text-gray-400 border border-gray-200 rounded px-2 py-1 flex-shrink-0 ml-2">
-                      {d.category}
+                    <span className="text-xs font-mono text-gray-400 border border-gray-200 rounded px-2 py-1 flex-shrink-0">
+                      {d.stage}
                     </span>
                   </div>
                   <p className="text-sm text-gray-500 font-mono leading-relaxed mb-4">
-                    Пациент обращается с характерными жалобами. Проведите дифференциальную диагностику и определите план лечения на основе изученного патогенеза.
+                    Пациент поступает с характерными жалобами после контакта с возможным источником инфекции. Проведите дифференциальную диагностику и обоснуйте лечебную тактику.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {d.symptoms.slice(0, 2).map((s, si) => (
@@ -579,12 +674,6 @@ export default function Index() {
                   </button>
                 </div>
               ))}
-
-              <div className="p-6 border border-dashed border-gray-200 rounded-sm flex flex-col items-center justify-center text-center min-h-40">
-                <Icon name="Plus" size={32} className="text-gray-300 mb-3" />
-                <div className="font-cormorant text-xl font-semibold text-gray-400">Добавить случай</div>
-                <p className="text-xs font-mono text-gray-300 mt-1">Новые клинические задачи скоро появятся</p>
-              </div>
             </div>
           </div>
         </section>
@@ -597,7 +686,7 @@ export default function Index() {
             <div className="mb-10">
               <span className="text-xs font-mono tracking-widest text-gray-400 uppercase mb-2 block">Раздел 03</span>
               <h2 className="font-cormorant text-5xl font-semibold text-gray-900">Тесты</h2>
-              <p className="text-gray-500 mt-2 text-sm font-mono">Проверьте знания по пройденному материалу</p>
+              <p className="text-gray-500 mt-2 text-sm font-mono">6 вопросов по всем четырём нозологиям</p>
             </div>
             <TestSection />
           </div>
@@ -611,7 +700,7 @@ export default function Index() {
             <div className="mb-8">
               <span className="text-xs font-mono tracking-widest text-gray-400 uppercase mb-2 block">Раздел 04</span>
               <h2 className="font-cormorant text-5xl font-semibold text-gray-900">Глоссарий</h2>
-              <p className="text-gray-500 mt-2 text-sm font-mono">Медицинские термины и определения</p>
+              <p className="text-gray-500 mt-2 text-sm font-mono">Ключевые термины инфектологии</p>
             </div>
 
             <div className="relative mb-8 max-w-md">
@@ -625,13 +714,13 @@ export default function Index() {
               />
             </div>
 
-            <div className="space-y-0 border border-gray-100 rounded-sm overflow-hidden">
+            <div className="border border-gray-100 rounded-sm overflow-hidden">
               {filteredTerms.map((t, i) => (
                 <div
                   key={t.term}
                   className="flex gap-6 p-5 border-b border-gray-50 last:border-b-0 hover:bg-gray-50 transition-colors group"
                 >
-                  <div className="w-40 flex-shrink-0">
+                  <div className="w-48 flex-shrink-0">
                     <div className="font-cormorant text-lg font-semibold text-gray-900 group-hover:text-gray-700">
                       {t.term}
                     </div>
@@ -643,9 +732,7 @@ export default function Index() {
                 </div>
               ))}
               {filteredTerms.length === 0 && (
-                <div className="p-10 text-center text-gray-400 font-mono text-sm">
-                  Термин не найден
-                </div>
+                <div className="p-10 text-center text-gray-400 font-mono text-sm">Термин не найден</div>
               )}
             </div>
 
@@ -661,9 +748,9 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
             <div className="w-5 h-5 rounded-sm flex items-center justify-center" style={{ background: "#1a1a2e" }}>
-              <span className="text-white text-xs font-mono font-bold">М</span>
+              <span className="text-white text-xs font-mono font-bold">И</span>
             </div>
-            <span className="font-cormorant text-base font-semibold text-gray-700">МедАтлас</span>
+            <span className="font-cormorant text-base font-semibold text-gray-700">ИнфектоАтлас</span>
           </div>
           <div className="flex gap-6 flex-wrap justify-center">
             {NAV_ITEMS.map((item) => (
@@ -676,11 +763,10 @@ export default function Index() {
               </button>
             ))}
           </div>
-          <span className="text-xs font-mono text-gray-300">© 2026 МедАтлас</span>
+          <span className="text-xs font-mono text-gray-300">© 2026 ИнфектоАтлас</span>
         </div>
       </footer>
 
-      {/* Disease Modal */}
       {selectedDisease && (
         <DiseaseModal disease={selectedDisease} onClose={() => setSelectedDisease(null)} />
       )}
