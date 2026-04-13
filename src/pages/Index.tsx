@@ -146,147 +146,147 @@ const GLOSSARY_TERMS = [
 const TEST_QUESTIONS = [
   {
     id: 1,
-    question: "Каков основной путь передачи лептоспироза?",
+    question: "Пациент с лептоспирозом, лёгкая форма. Какой препарат назначаете?",
     options: [
-      "Воздушно-капельный",
-      "Контакт с водой/почвой, заражёнными мочой грызунов",
-      "Укус комара",
-      "Фекально-оральный",
+      "Доксициклин 0,1 г 2 раза в сутки внутрь",
+      "Бензилпенициллин 12 млн ЕД/сут в/м",
+      "Ванкомицин 1 г в/в каждые 12 ч",
+      "Линкомицин 0,6 г × 3 р/сут в/м",
     ],
-    correct: 1,
-    explanation: "Лептоспиры выделяются с мочой инфицированных животных. Заражение происходит при контакте повреждённой кожи или слизистых с заражённой водой или почвой.",
+    correct: 0,
+    explanation: "При лёгкой и среднетяжёлой форме лептоспироза препарат выбора — доксициклин 0,1 г 2 раза в сутки внутрь. Пенициллин в высокой дозе — для тяжёлых форм. Ванкомицин не применяется.",
   },
   {
     id: 2,
-    question: "Что происходит в эритроцитарном цикле при малярии?",
+    question: "У пациента с лептоспирозом анурия, мочевина 3,0 г/л, K⁺ 8,1 ммоль/л. Ваша тактика?",
     options: [
-      "Размножение плазмодия в клетках печени",
-      "Размножение плазмодия в эритроцитах с их последующим разрушением",
-      "Половое размножение в кишечнике комара",
-      "Формирование спорозоитов",
+      "Увеличить дозу фуросемида до 800 мг/сут",
+      "Гемодиализ",
+      "Инфузия физ. раствора 2 л/сут",
+      "Гепарин 200 ЕД/кг",
     ],
     correct: 1,
-    explanation: "В эритроцитарном цикле мерозоиты проникают в эритроциты, размножаются путём шизогонии и разрушают клетку. Высвобождение мерозоитов и пирогенов вызывает характерный лихорадочный пароксизм.",
+    explanation: "Показания к гемодиализу: анурия, мочевина >2,5 г/л, гиперкалиемия >7–8 ммоль/л, отёк мозга. Все критерии выполнены — необходим срочный гемодиализ. Форсированный диурез при анурии неэффективен и опасен.",
   },
   {
     id: 3,
-    question: "Каков механизм действия тетаноспазмина?",
+    question: "Для купирования судорог при столбняке применяют нейроплегическую смесь. Что входит в её состав?",
     options: [
-      "Активация двигательных нейронов",
-      "Блокада ингибиторных синапсов → неконтролируемое возбуждение мотонейронов",
-      "Прямое разрушение мышечных волокон",
-      "Нарушение нейромышечной передачи по типу ботулотоксина",
+      "Дроперидол + пипольфен + промедол",
+      "Диазепам + натрия оксибутират + галоперидол",
+      "Пропофол + кетамин + морфин",
+      "Дексаметазон + аминазин + фентанил",
     ],
-    correct: 1,
-    explanation: "Тетаноспазмин блокирует высвобождение глицина и ГАМК в ингибиторных интернейронах Реншоу. В результате мотонейроны непрерывно возбуждаются — возникают тонические судороги.",
+    correct: 0,
+    explanation: "Нейроплегическая смесь при столбняке: дроперидол 0,25% 4 мл + пипольфен 2,5% 2 мл + промедол 2% 2 мл в/в 4 раза в сутки. Дополнительно — диазепам и натрия оксибутират.",
   },
   {
     id: 4,
-    question: "Какой симптом патогномоничен для бешенства?",
+    question: "Пациенту со столбняком введён антибиотик. Следующий приоритет?",
     options: [
-      "Желтуха",
-      "Тризм",
-      "Гидрофобия",
-      "Пароксизмальная лихорадка",
-    ],
-    correct: 2,
-    explanation: "Гидрофобия — рефлекторный спазм мышц глотки и гортани при виде воды — патогномоничный симптом бешенства, обусловленный поражением ствола мозга.",
-  },
-  {
-    id: 5,
-    question: "Какой вид плазмодия вызывает наиболее тяжёлую малярию с риском церебральных осложнений?",
-    options: [
-      "Plasmodium vivax",
-      "Plasmodium malariae",
-      "Plasmodium falciparum",
-      "Plasmodium ovale",
-    ],
-    correct: 2,
-    explanation: "P. falciparum вызывает тропическую малярию. Поражённые эритроциты экспрессируют белки, вызывающие их адгезию к стенке сосудов мозга, что приводит к церебральной малярии.",
-  },
-  {
-    id: 6,
-    question: "Какое условие необходимо для размножения Clostridium tetani в ране?",
-    options: [
-      "Наличие кислорода",
-      "Влажная поверхность",
-      "Анаэробная (бескислородная) среда",
-      "Щелочная pH среды",
-    ],
-    correct: 2,
-    explanation: "C. tetani — облигатный анаэроб: размножается только без молекулярного кислорода. Глубокие колотые раны, ожоги с некрозом создают необходимую анаэробную среду.",
-  },
-  {
-    id: 7,
-    question: "Пациент с лептоспирозом, тяжёлая форма. Какой антибиотик является препаратом первой линии?",
-    options: [
-      "Ципрофлоксацин 500 мг per os",
-      "Бензилпенициллин 1–1,5 млн ЕД в/в каждые 6 ч",
-      "Ванкомицин 1 г в/в каждые 12 ч",
-      "Кларитромицин 500 мг per os",
-    ],
-    correct: 1,
-    explanation: "При тяжёлом лептоспирозе препарат выбора — бензилпенициллин в/в. Доксициклин применяется при лёгких формах или как альтернатива. Фторхинолоны и ванкомицин не являются стандартом лечения.",
-  },
-  {
-    id: 8,
-    question: "При тяжёлой малярии P. falciparum какой препарат является золотым стандартом (ВОЗ)?",
-    options: [
-      "Хлорохин в/в",
-      "Хинин в/в + доксициклин",
-      "Артесунат в/в",
-      "Примахин per os",
-    ],
-    correct: 2,
-    explanation: "Артесунат в/в — золотой стандарт лечения тяжёлой малярии P. falciparum согласно рекомендациям ВОЗ (2023). Он превосходит хинин по эффективности и снижению летальности в клинических исследованиях.",
-  },
-  {
-    id: 9,
-    question: "Почему при лечении P. vivax/ovale к хлорохину обязательно добавляют примахин?",
-    options: [
-      "Для усиления антипиретического эффекта",
-      "Для уничтожения гипнозоитов в печени и предотвращения рецидивов",
-      "Примахин активен против эритроцитарных форм",
-      "Для профилактики резистентности",
-    ],
-    correct: 1,
-    explanation: "P. vivax и P. ovale образуют гипнозоиты — спящие формы в гепатоцитах, способные вызвать рецидив спустя месяцы и годы. Примахин — единственный препарат, активный против гипнозоитов. Перед назначением обязателен скрининг на дефицит Г6ФД.",
-  },
-  {
-    id: 10,
-    question: "Почему перенесённый столбняк не оставляет стойкого иммунитета?",
-    options: [
-      "Столбняк вызывает выраженную иммуносупрессию",
-      "Терапевтическая доза токсина слишком мала для формирования иммунного ответа",
-      "Иммуногенная доза тетаноспазмина несовместима с жизнью",
-      "Антитела к тетаноспазмину разрушаются печенью",
-    ],
-    correct: 2,
-    explanation: "Летальная доза тетаноспазмина для человека ниже иммунизирующей. Это значит, что доза токсина, достаточная для развития болезни, слишком мала для формирования иммунного ответа. Поэтому переболевших обязательно иммунизируют анатоксином.",
-  },
-  {
-    id: 11,
-    question: "В какие сроки от момента укуса животного необходимо ввести антирабический иммуноглобулин (АРИЧ)?",
-    options: [
-      "В течение 7 суток",
-      "В течение 24 часов, не позднее 7 суток",
-      "Только на фоне появления симптомов",
-      "Срок не имеет значения",
-    ],
-    correct: 1,
-    explanation: "АРИЧ максимально эффективен при введении как можно раньше — в день 0 вместе с первой дозой вакцины. Введение позднее 7 суток от момента контакта нецелесообразно, так как вирус уже может достичь ЦНС.",
-  },
-  {
-    id: 12,
-    question: "Пациент с диагнозом столбняк. Антибиотик введён. Какое следующее приоритетное действие?",
-    options: [
-      "Срочная МРТ головного мозга",
-      "Введение противостолбнячного иммуноглобулина и хирургическая санация раны",
-      "Назначение кортикостероидов",
+      "МРТ головного мозга",
+      "Введение ПСС 50 000 МЕ и ПХО раны",
+      "Кортикостероиды (преднизолон 60 мг)",
       "Люмбальная пункция",
     ],
     correct: 1,
-    explanation: "Ключевые приоритеты: нейтрализация свободного токсина (ПСИЧ/ПСС — чем раньше, тем эффективнее) и хирургическая санация очага для прекращения выработки тетаноспазмина. Кортикостероиды противопоказаны. МРТ и пункция не влияют на тактику.",
+    explanation: "После антибиотика — нейтрализация токсина: ПСС 50 000 МЕ в/м дробно после в/к пробы (или ПСИЧ 3000 ЕД) + хирургическая обработка раны. Кортикостероиды при столбняке противопоказаны. МРТ и пункция не меняют тактику.",
+  },
+  {
+    id: 5,
+    question: "Почему перенесённый столбняк не оставляет иммунитета и требует обязательной вакцинации после выздоровления?",
+    options: [
+      "Столбняк вызывает иммуносупрессию",
+      "Летальная доза тетаноспазмина ниже иммунизирующей",
+      "Антитела к тетаноспазмину разрушаются в печени",
+      "C. tetani выделяет иммунодепрессанты",
+    ],
+    correct: 1,
+    explanation: "Летальная доза тетаноспазмина для человека ниже иммунизирующей: доза, вызывающая болезнь, слишком мала для выработки защитных антител. Поэтому переболевших обязательно иммунизируют АС-анатоксином.",
+  },
+  {
+    id: 6,
+    question: "При церебральной малярии (P. falciparum) назначение кортикостероидов:",
+    options: [
+      "Обязательно — снижает отёк мозга",
+      "Допустимо в малых дозах",
+      "Противопоказано — увеличивает летальность",
+      "Назначается только при коме",
+    ],
+    correct: 2,
+    explanation: "Кортикостероиды при церебральной малярии P. falciparum противопоказаны: клинические испытания показали, что они увеличивают летальность и длительность комы. Лечение — артесунат в/в + дегидратация.",
+  },
+  {
+    id: 7,
+    question: "Пациент с P. vivax. Хлорохин назначен. Что обязательно добавить для радикального излечения?",
+    options: [
+      "Артесунат в/в",
+      "Примахин 0,25 мг/кг/сут 14 дней (после скрининга на Г6ФД)",
+      "Доксициклин 0,1 г 2 р/сут",
+      "Примахин не показан при P. vivax",
+    ],
+    correct: 1,
+    explanation: "P. vivax образует гипнозоиты в печени — дремлющие формы, вызывающие рецидивы через месяцы и годы. Примахин — единственный препарат, уничтожающий гипнозоиты. Обязателен скрининг на дефицит Г6ФД (риск гемолиза).",
+  },
+  {
+    id: 8,
+    question: "При тяжёлой P. falciparum с ОПН применяют хинин в/в. Как изменяется доза?",
+    options: [
+      "Дозу увеличивают — почки не выводят препарат",
+      "Доза не меняется",
+      "Дозу снижают до 10 мг/кг (в норме 20 мг/кг/сут) из-за кумуляции",
+      "Хинин отменяют, назначают хлорохин",
+    ],
+    correct: 2,
+    explanation: "При ОПН хинин кумулируется — его дозу снижают до 10 мг/кг/сут. Нагрузочная доза остаётся 10 мг/кг. Предпочтительнее артесунат в/в, не требующий коррекции при ОПН.",
+  },
+  {
+    id: 9,
+    question: "Пострадавший укушен лисой. Рана промыта. Что вводят ПЕРВЫМ в день 0?",
+    options: [
+      "Только вакцину КОКАВ",
+      "Антирабический иммуноглобулин (инфильтрация раны + остаток в/м) + вакцину КОКАВ",
+      "Иммуноглобулин через 24 ч после вакцины",
+      "Сначала наблюдение за животным 10 суток",
+    ],
+    correct: 1,
+    explanation: "В день 0 одновременно: антирабический иммуноглобулин — максимальная доза инфильтрируется вокруг раны, остаток в/м + первая доза вакцины КОКАВ 1,0 мл в/м в дельтовидную мышцу. Иммуноглобулин после 7 суток неэффективен.",
+  },
+  {
+    id: 10,
+    question: "Какова схема вакцинации КОКАВ при постэкспозиционной профилактике бешенства?",
+    options: [
+      "0, 7, 21 сутки",
+      "0, 3, 7, 14, 30 сутки",
+      "0, 14, 30 сутки",
+      "Однократно в день 0",
+    ],
+    correct: 1,
+    explanation: "Стандартная схема КОКАВ: 1,0 мл в/м на 0, 3, 7, 14, 30-е сутки. При тяжёлых укусах (лицо, голова, шея, кисти) — дополнительно на 90-е сутки. Введение в ягодицу недопустимо — только дельтовидная мышца.",
+  },
+  {
+    id: 11,
+    question: "Пациент с бешенством, гидрофобия. Специфическая терапия?",
+    options: [
+      "Экстренное введение антирабической вакцины",
+      "Специфической терапии не существует — только паллиативная помощь в ОРИТ",
+      "Рибавирин + интерферон",
+      "Протокол Милуоки — стандарт лечения",
+    ],
+    correct: 1,
+    explanation: "При развившемся бешенстве специфического лечения не существует. Летальность 100%. Лечение паллиативное в ОРИТ: изоляция, устранение раздражителей, седация (диазепам, пропофол), ИВЛ, инфузионная терапия. Противовирусные неэффективны.",
+  },
+  {
+    id: 12,
+    question: "ДВС-синдром при лептоспирозе, фаза гипокоагуляции. Что назначаете?",
+    options: [
+      "Гепарин 200 ЕД/кг",
+      "Аминокапроновую кислоту 5% + дицинон (этамзилат)",
+      "Варфарин",
+      "Преднизолон 200 мг/сут",
+    ],
+    correct: 1,
+    explanation: "В фазе гипокоагуляции ДВС-синдрома назначают ингибиторы фибринолиза: аминокапроновую кислоту 5% + дицинон. Гепарин применяется в фазу гиперкоагуляции. Варфарин при ДВС противопоказан.",
   },
 ];
 
@@ -451,6 +451,402 @@ function DiseaseModal({ disease, onClose }: { disease: typeof DISEASES[0] & { tr
           )}
         </div>
       </div>
+    </div>
+  );
+}
+
+// ─── CLINICAL GAME DATA ──────────────────────────────────────────────────────
+
+type GameStep = {
+  id: string;
+  type: "anamnesis" | "exam" | "labs" | "diagnosis" | "treatment";
+  question: string;
+  options: { text: string; effect: number; feedback: string; reveal?: string }[];
+};
+
+type ClinicalCase = {
+  id: number;
+  title: string;
+  color: string;
+  disease: string;
+  intro: string;
+  patient: string;
+  steps: GameStep[];
+};
+
+const CLINICAL_CASES: ClinicalCase[] = [
+  {
+    id: 1,
+    title: "Случай №1",
+    color: "#B7950B",
+    disease: "Лептоспироз",
+    intro: "В приёмный покой поступает пациент 34 лет.",
+    patient: "Мужчина, 34 года, рыболов. Болен 4-й день. Жалобы: высокая температура, сильные боли в икроножных мышцах, моча стала тёмной.",
+    steps: [
+      {
+        id: "anamnesis",
+        type: "anamnesis",
+        question: "Что уточните в анамнезе?",
+        options: [
+          { text: "Контакт с водоёмами, животными за последние 2 недели", effect: 20, feedback: "Верно. Пациент рыбачил в заросшем пруду 5 дней назад. Купался. Есть ссадины на руках.", reveal: "Эпидемиологический анамнез положительный: контакт с природным водоёмом + повреждения кожи." },
+          { text: "Были ли заграничные поездки", effect: 5, feedback: "Пациент никуда не выезжал. Нерелевантный вопрос для данной клиники.", reveal: "" },
+          { text: "Аллергия на антибиотики", effect: 10, feedback: "Важно, но не первоочерёдно при сборе эпид. анамнеза. Аллергии нет.", reveal: "" },
+          { text: "Перейти сразу к осмотру без анамнеза", effect: -15, feedback: "Плохое решение. Эпидемиологический анамнез — ключ к диагнозу при зоонозах.", reveal: "" },
+        ],
+      },
+      {
+        id: "exam",
+        type: "exam",
+        question: "Какие данные осмотра важны в первую очередь?",
+        options: [
+          { text: "Желтушность склер и кожи, геморрагии, состояние почек (диурез)", effect: 20, feedback: "Правильно. Склеры иктеричны. Желтуха умеренная. Петехии на конъюнктиве. Диурез снижен до 400 мл/сут.", reveal: "Иктерическая форма + геморрагический синдром + олигурия." },
+          { text: "Измерить АД и ЧСС", effect: 5, feedback: "АД 100/70, ЧСС 102. Полезно, но недостаточно для постановки диагноза.", reveal: "" },
+          { text: "Осмотр кожных высыпаний на туловище", effect: 5, feedback: "Сыпи нет. Незначительный вклад в диагностику.", reveal: "" },
+          { text: "Неврологический статус", effect: 5, feedback: "Без очаговых симптомов. Оценка важна, но не приоритетна на данном этапе.", reveal: "" },
+        ],
+      },
+      {
+        id: "labs",
+        type: "labs",
+        question: "Какие анализы назначите?",
+        options: [
+          { text: "ОАК, б/х (билирубин, АЛТ, креатинин, мочевина), ОАМ, коагулограмма + РМА/ПЦР на лептоспироз", effect: 25, feedback: "Отлично! ОАК: лейкоцитоз 18×10⁹, нейтрофилёз, СОЭ 55. Б/х: креатинин 380 мкмоль/л, билирубин 95 мкмоль/л, АЛТ ↑ 3N. ОАМ: протеинурия +++. РМА: позитивна 1:800.", reveal: "Лабораторное подтверждение: ОПН + гепатит + геморрагический синдром + серология." },
+          { text: "Только ОАК и ОАМ", effect: 5, feedback: "Недостаточно. Без б/х невозможно оценить тяжесть поражения органов.", reveal: "" },
+          { text: "Рентген грудной клетки и ЭКГ", effect: 0, feedback: "Не первоочерёдны. Без специфических изменений.", reveal: "" },
+          { text: "КТ брюшной полости", effect: -5, feedback: "Не показана на данном этапе, задерживает лечение.", reveal: "" },
+        ],
+      },
+      {
+        id: "diagnosis",
+        type: "diagnosis",
+        question: "Ваш диагноз?",
+        options: [
+          { text: "Лептоспироз, иктерическая форма, тяжёлое течение. ОПН. ДВС-синдром.", effect: 25, feedback: "Верно! Диагноз установлен правильно с указанием формы и осложнений.", reveal: "" },
+          { text: "Вирусный гепатит А, тяжёлая форма", effect: -15, feedback: "Нет. При гепатите А нет эпид. контакта с водоёмом, нет миалгии, нет ОПН в такие сроки.", reveal: "" },
+          { text: "Малярия", effect: -10, feedback: "Нет характерных пароксизмов и выезда в эндемичный регион. Ошибка.", reveal: "" },
+          { text: "Сепсис неуточнённой этиологии", effect: 0, feedback: "Частично допустимо, но без уточнения этиологии лечение будет некорректным.", reveal: "" },
+        ],
+      },
+      {
+        id: "treatment",
+        type: "treatment",
+        question: "Тяжёлая форма. Назначьте лечение:",
+        options: [
+          { text: "Пенициллин 12 млн ЕД/сут в/м + преднизолон 120 мг/сут + дезинтоксикация + экстренный гемодиализ (по показаниям)", effect: 30, feedback: "Отличное решение! Этиотропная терапия + ГКС при тяжёлом течении + коррекция ОПН. Пациент переведён в ОРИТ, динамика положительная.", reveal: "" },
+          { text: "Доксициклин 0,1 г per os + обильное питьё", effect: -15, feedback: "Грубая ошибка: пероральная терапия при тяжёлой форме с ОПН недопустима. Показан пенициллин в/м + ОРИТ.", reveal: "" },
+          { text: "Пенициллин 12 млн ЕД/сут + фуросемид 40 мг", effect: 10, feedback: "Антибиотик верный, но доза фуросемида мала (нужно до 800 мг/сут при ОПН) и не назначены ГКС и дезинтоксикация.", reveal: "" },
+          { text: "Цефтриаксон + гемодиализ, без ГКС", effect: 15, feedback: "Приемлемо, но ГКС при тяжёлом лептоспирозе показаны. Неполное лечение.", reveal: "" },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Случай №2",
+    color: "#6E2F1A",
+    disease: "Столбняк",
+    intro: "Бригада скорой доставила пациента с судорогами.",
+    patient: "Мужчина, 58 лет, дачник. 10 дней назад поранил ногу гвоздём, не обращался. Сегодня: тризм, невозможность открыть рот, напряжение мышц живота, повторные судороги.",
+    steps: [
+      {
+        id: "anamnesis",
+        type: "anamnesis",
+        question: "Что критически важно выяснить?",
+        options: [
+          { text: "Вакцинация против столбняка (когда последняя прививка АДС-М?)", effect: 20, feedback: "Ключевой вопрос! Последняя прививка — 30 лет назад. Иммунитет отсутствует. Рана глубокая, колотая — идеальные условия для C. tetani.", reveal: "Не вакцинирован. Колотая рана 10-дневной давности. Анаэробная среда сформирована." },
+          { text: "Наследственные заболевания нервной системы", effect: -5, feedback: "Нерелевантно. Клиника столбняка настолько характерна, что генетические факторы не рассматриваются.", reveal: "" },
+          { text: "Уточнить характер судорог у родственников", effect: 10, feedback: "Полезно, но не первоочерёдно. Тризм + опистотонус при сохранном сознании — диагностика клиническая.", reveal: "" },
+          { text: "Какие лекарства принимает постоянно", effect: 5, feedback: "Важно, но не меняет экстренную тактику. Постоянного лечения нет.", reveal: "" },
+        ],
+      },
+      {
+        id: "exam",
+        type: "exam",
+        question: "При осмотре выявлено: тризм, дисфагия, ригидность мышц живота, сохранное сознание. Ваши действия?",
+        options: [
+          { text: "Осмотр раны на ноге, оценка дыхания (SpO₂), положение в постели", effect: 20, feedback: "Верно. Рана на подошве — гнойная, с некрозом. SpO₂ 94%. Судорожная готовность высокая.", reveal: "Диагноз подтверждён клинически: тризм + опистотонус + сохранённое сознание = столбняк." },
+          { text: "Провести люмбальную пункцию для исключения менингита", effect: -20, feedback: "Грубая ошибка! Пункция при столбняке опасна и не нужна — судороги не менингеальные, ликвор не изменён.", reveal: "" },
+          { text: "Ввести реланиум в/в и наблюдать 30 минут", effect: 5, feedback: "Диазепам показан, но без параллельного осмотра очага — недостаточно.", reveal: "" },
+          { text: "Срочная КТ головного мозга", effect: -10, feedback: "Задерживает специфическое лечение. Клиническая картина достаточна для диагноза.", reveal: "" },
+        ],
+      },
+      {
+        id: "labs",
+        type: "labs",
+        question: "Какие исследования нужны?",
+        options: [
+          { text: "ОАК, коагулограмма, газы крови, КЩС — для оценки состояния, специфической диагностики нет", effect: 20, feedback: "Правильно. Специфических лабораторных тестов для столбняка нет — диагноз клинический. Газы крови: гипоксия. Лейкоцитоз.", reveal: "Диагноз столбняк, тяжёлое течение — подтверждён клинически." },
+          { text: "Посев раны на C. tetani", effect: 0, feedback: "Теоретически возможен, но результат будет через 5–7 дней — лечение не может ждать. Практического значения нет.", reveal: "" },
+          { text: "МРТ спинного мозга", effect: -10, feedback: "Не показана. Задерживает лечение. Картина МРТ при столбняке не изменена.", reveal: "" },
+          { text: "ЭЭГ для оценки судорожной активности", effect: 5, feedback: "При столбняке ЭЭГ не имеет решающего диагностического значения — судороги периферические.", reveal: "" },
+        ],
+      },
+      {
+        id: "diagnosis",
+        type: "diagnosis",
+        question: "Ваш диагноз и тяжесть?",
+        options: [
+          { text: "Столбняк генерализованный, тяжёлое течение (тризм + опистотонус + дыхательная недостаточность)", effect: 25, feedback: "Верно. Тяжёлое течение: генерализованные судороги + дыхательная недостаточность. Лечение в ОРИТ.", reveal: "" },
+          { text: "Менингит бактериальный", effect: -20, feedback: "Нет. При менингите сознание нарушено, тризма нет, нет опистотонуса при сохранном сознании.", reveal: "" },
+          { text: "Столбняк местный, лёгкое течение", effect: -10, feedback: "Неверно. Генерализованные судороги и дыхательная недостаточность — тяжёлое течение.", reveal: "" },
+          { text: "Отравление стрихнином", effect: -5, feedback: "Клиника схожа, но нет эпид. данных. При сборе анамнеза и наличии раны — столбняк.", reveal: "" },
+        ],
+      },
+      {
+        id: "treatment",
+        type: "treatment",
+        question: "Назначьте лечение:",
+        options: [
+          { text: "ОРИТ + ПСС 50 000 МЕ в/м (после в/к пробы) + метронидазол 500 мг в/в × 3 р/сут + нейроплегическая смесь + ПХО раны + ИВЛ при необходимости", effect: 30, feedback: "Отличное решение. Все приоритеты соблюдены: нейтрализация токсина, антибиотик, миорелаксация, санация раны. Пациент выжил.", reveal: "" },
+          { text: "Диазепам в/в + наблюдение в палате общего профиля", effect: -25, feedback: "Критическая ошибка. Без нейтрализации токсина, без ОРИТ, без санации раны — летальный исход.", reveal: "" },
+          { text: "Пенициллин в/в + преднизолон 180 мг + ПСС, без ПХО раны", effect: 10, feedback: "Частично верно, но без ПХО раны источник токсина не устранён. Неполное лечение.", reveal: "" },
+          { text: "Кортикостероиды высокими дозами + седация", effect: -15, feedback: "Кортикостероиды при столбняке не показаны как основное лечение. Без ПСС — прогрессирование.", reveal: "" },
+        ],
+      },
+    ],
+  },
+];
+
+type GamePhase = "select" | "playing" | "result";
+
+function ClinicalGame() {
+  const [phase, setPhase] = useState<GamePhase>("select");
+  const [selectedCase, setSelectedCase] = useState<ClinicalCase | null>(null);
+  const [stepIdx, setStepIdx] = useState(0);
+  const [score, setScore] = useState(0);
+  const [maxScore, setMaxScore] = useState(0);
+  const [chosen, setChosen] = useState<number | null>(null);
+  const [revealed, setRevealed] = useState(false);
+  const [history, setHistory] = useState<{ step: GameStep; chosenIdx: number; effect: number }[]>([]);
+
+  const startCase = (c: ClinicalCase) => {
+    setSelectedCase(c);
+    setStepIdx(0);
+    setScore(0);
+    setMaxScore(c.steps.reduce((acc, s) => acc + Math.max(...s.options.map(o => o.effect)), 0));
+    setChosen(null);
+    setRevealed(false);
+    setHistory([]);
+    setPhase("playing");
+  };
+
+  const handleChoice = (idx: number) => {
+    if (chosen !== null) return;
+    setChosen(idx);
+    setRevealed(true);
+    const step = selectedCase!.steps[stepIdx];
+    const eff = step.options[idx].effect;
+    setScore(s => s + Math.max(0, eff));
+    setHistory(h => [...h, { step, chosenIdx: idx, effect: eff }]);
+  };
+
+  const handleNext = () => {
+    if (!selectedCase) return;
+    if (stepIdx < selectedCase.steps.length - 1) {
+      setStepIdx(i => i + 1);
+      setChosen(null);
+      setRevealed(false);
+    } else {
+      setPhase("result");
+    }
+  };
+
+  const STEP_LABELS: Record<GameStep["type"], string> = {
+    anamnesis: "Сбор анамнеза",
+    exam: "Осмотр",
+    labs: "Анализы",
+    diagnosis: "Диагноз",
+    treatment: "Лечение",
+  };
+
+  const STEP_ICONS: Record<GameStep["type"], string> = {
+    anamnesis: "MessageCircle",
+    exam: "Stethoscope",
+    labs: "FlaskConical",
+    diagnosis: "FileText",
+    treatment: "Pill",
+  };
+
+  if (phase === "select") {
+    return (
+      <div>
+        <p className="text-sm text-gray-500 font-mono mb-6 max-w-xl">
+          Выберите клинический случай. Опросите пациента, назначьте анализы, поставьте диагноз и назначьте лечение. Каждое решение влияет на исход.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {CLINICAL_CASES.map((c) => (
+            <div
+              key={c.id}
+              className="p-6 border border-gray-100 rounded-sm cursor-pointer hover:border-gray-300 transition-all duration-200 group"
+              style={{ borderLeft: `3px solid ${c.color}` }}
+              onClick={() => startCase(c)}
+            >
+              <div className="text-xs font-mono tracking-widest uppercase mb-1" style={{ color: c.color }}>{c.title}</div>
+              <div className="font-cormorant text-2xl font-semibold text-gray-900 mb-2">{c.disease}</div>
+              <p className="text-sm text-gray-500 font-mono">{c.intro}</p>
+              <div className="flex items-center gap-2 mt-4 text-xs font-mono text-gray-400">
+                <span>{c.steps.length} этапов</span>
+                <span>·</span>
+                <span className="flex items-center gap-1">Начать <Icon name="ArrowRight" size={12} /></span>
+              </div>
+            </div>
+          ))}
+          <div className="p-6 border border-dashed border-gray-200 rounded-sm flex flex-col items-center justify-center text-center min-h-32">
+            <Icon name="Plus" size={28} className="text-gray-300 mb-2" />
+            <div className="font-cormorant text-lg font-semibold text-gray-400">Скоро: Малярия</div>
+            <div className="text-xs font-mono text-gray-300 mt-1">Случай в разработке</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (phase === "result") {
+    const pct = maxScore > 0 ? Math.round((score / maxScore) * 100) : 0;
+    const outcome = pct >= 80 ? { label: "Пациент выздоровел", color: "#166534", bg: "#f0fdf4", border: "#4ade80" }
+      : pct >= 50 ? { label: "Пациент стабилизирован с осложнениями", color: "#92400e", bg: "#fffbeb", border: "#fbbf24" }
+      : { label: "Летальный исход", color: "#991b1b", bg: "#fef2f2", border: "#f87171" };
+    return (
+      <div className="max-w-2xl">
+        <div className="p-6 rounded-sm border mb-6" style={{ background: outcome.bg, borderColor: outcome.border }}>
+          <div className="font-cormorant text-3xl font-semibold mb-1" style={{ color: outcome.color }}>{outcome.label}</div>
+          <div className="text-sm font-mono" style={{ color: outcome.color }}>{score} из {maxScore} очков · {pct}%</div>
+        </div>
+        <div className="space-y-3 mb-8">
+          {history.map((h, i) => (
+            <div key={i} className="border border-gray-100 rounded-sm overflow-hidden">
+              <div className="flex items-center gap-2 px-4 py-2 bg-gray-50">
+                <Icon name={STEP_ICONS[h.step.type]} size={13} className="text-gray-400" fallback="Circle" />
+                <span className="text-xs font-mono text-gray-500 uppercase tracking-widest">{STEP_LABELS[h.step.type]}</span>
+                <span className={`ml-auto text-xs font-mono font-medium ${h.effect > 0 ? "text-green-600" : h.effect < 0 ? "text-red-600" : "text-gray-400"}`}>
+                  {h.effect > 0 ? "+" : ""}{h.effect} очк.
+                </span>
+              </div>
+              <div className="px-4 py-2.5 text-sm font-mono text-gray-600 leading-relaxed">
+                <span className="text-gray-400">Выбрано: </span>{h.step.options[h.chosenIdx].text}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex gap-3">
+          <button
+            onClick={() => startCase(selectedCase!)}
+            className="px-6 py-2.5 text-sm font-mono text-white rounded-sm transition-all duration-200 hover:opacity-80"
+            style={{ background: "#1a1a2e" }}
+          >
+            Повторить
+          </button>
+          <button
+            onClick={() => setPhase("select")}
+            className="px-6 py-2.5 text-sm font-mono text-gray-700 rounded-sm border border-gray-200 hover:border-gray-400 transition-all duration-200"
+          >
+            Другой случай
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!selectedCase) return null;
+  const step = selectedCase.steps[stepIdx];
+  const chosenOption = chosen !== null ? step.options[chosen] : null;
+
+  return (
+    <div className="max-w-2xl">
+      {/* Header */}
+      <div className="flex items-center gap-4 mb-6">
+        <div className="flex gap-1.5">
+          {selectedCase.steps.map((s, i) => (
+            <div
+              key={i}
+              title={STEP_LABELS[s.type]}
+              className="h-1 rounded-full transition-all duration-300"
+              style={{
+                width: 28,
+                background: i < stepIdx ? selectedCase.color : i === stepIdx ? selectedCase.color : "#e5e7eb",
+                opacity: i < stepIdx ? 0.4 : 1,
+              }}
+            />
+          ))}
+        </div>
+        <span className="text-xs font-mono text-gray-400 ml-auto">{stepIdx + 1} / {selectedCase.steps.length}</span>
+      </div>
+
+      {/* Patient card (only first step) */}
+      {stepIdx === 0 && (
+        <div className="p-4 bg-gray-50 border border-gray-100 rounded-sm mb-6">
+          <div className="text-xs font-mono tracking-widest uppercase text-gray-400 mb-1">Пациент</div>
+          <p className="text-sm text-gray-700 font-mono leading-relaxed">{selectedCase.patient}</p>
+        </div>
+      )}
+
+      {/* Step */}
+      <div className="flex items-center gap-2 mb-4">
+        <Icon name={STEP_ICONS[step.type]} size={16} fallback="Circle" style={{ color: selectedCase.color }} />
+        <span className="text-xs font-mono tracking-widest uppercase" style={{ color: selectedCase.color }}>
+          {STEP_LABELS[step.type]}
+        </span>
+      </div>
+
+      <h3 className="font-cormorant text-2xl font-semibold text-gray-900 mb-5 leading-snug">{step.question}</h3>
+
+      <div className="space-y-2 mb-5">
+        {step.options.map((opt, i) => {
+          let borderCol = "#e5e7eb";
+          let bg = "#fff";
+          let textCol = "#374151";
+          if (revealed) {
+            if (i === chosen) {
+              if (opt.effect > 10) { bg = "#f0fdf4"; borderCol = "#4ade80"; textCol = "#166534"; }
+              else if (opt.effect > 0) { bg = "#fffbeb"; borderCol = "#fbbf24"; textCol = "#92400e"; }
+              else { bg = "#fef2f2"; borderCol = "#f87171"; textCol = "#991b1b"; }
+            } else {
+              bg = "#fafafa"; borderCol = "#f3f4f6"; textCol = "#9ca3af";
+            }
+          }
+          return (
+            <button
+              key={i}
+              onClick={() => handleChoice(i)}
+              disabled={revealed}
+              className="w-full text-left px-5 py-3.5 rounded-sm border transition-all duration-200 text-sm font-mono disabled:cursor-default"
+              style={{ background: bg, borderColor: borderCol, color: textCol }}
+            >
+              {opt.text}
+            </button>
+          );
+        })}
+      </div>
+
+      {revealed && chosenOption && (
+        <div className="mb-5">
+          <div
+            className="p-4 rounded-sm border mb-2 text-sm font-mono leading-relaxed"
+            style={{
+              background: chosenOption.effect > 10 ? "#f0fdf4" : chosenOption.effect > 0 ? "#fffbeb" : "#fef2f2",
+              borderColor: chosenOption.effect > 10 ? "#4ade80" : chosenOption.effect > 0 ? "#fbbf24" : "#f87171",
+              color: chosenOption.effect > 10 ? "#166534" : chosenOption.effect > 0 ? "#92400e" : "#991b1b",
+            }}
+          >
+            {chosenOption.feedback}
+          </div>
+          {chosenOption.reveal && (
+            <div className="p-4 rounded-sm border border-blue-100 bg-blue-50 text-sm text-blue-800 font-mono leading-relaxed">
+              {chosenOption.reveal}
+            </div>
+          )}
+        </div>
+      )}
+
+      {revealed && (
+        <button
+          onClick={handleNext}
+          className="px-6 py-2.5 text-sm font-mono text-white rounded-sm transition-all duration-200 hover:opacity-80"
+          style={{ background: "#1a1a2e" }}
+        >
+          {stepIdx < selectedCase.steps.length - 1 ? "Следующий этап →" : "Посмотреть итог"}
+        </button>
+      )}
     </div>
   );
 }
@@ -759,44 +1155,9 @@ export default function Index() {
             <div className="mb-10">
               <span className="text-xs font-mono tracking-widest text-gray-400 uppercase mb-2 block">Раздел 02</span>
               <h2 className="font-cormorant text-5xl font-semibold text-gray-900">Практика</h2>
-              <p className="text-gray-500 mt-2 text-sm font-mono">Клинические разборы и дифференциальная диагностика</p>
+              <p className="text-gray-500 mt-2 text-sm font-mono">Интерактивные клинические случаи — опрос, диагностика, лечение</p>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {DISEASES.map((d, i) => (
-                <div key={d.id} className="p-6 border border-gray-100 rounded-sm" style={{ borderLeft: `3px solid ${d.color}` }}>
-                  <div className="flex items-start justify-between mb-4 gap-2">
-                    <div>
-                      <span className="text-xs font-mono tracking-widest uppercase mb-1 block" style={{ color: d.color }}>
-                        Клинический случай №{i + 1}
-                      </span>
-                      <h3 className="font-cormorant text-2xl font-semibold text-gray-900">{d.name}</h3>
-                      <p className="text-xs font-mono text-gray-400 italic mt-0.5">{d.pathogen}</p>
-                    </div>
-                    <span className="text-xs font-mono text-gray-400 border border-gray-200 rounded px-2 py-1 flex-shrink-0">
-                      {d.stage}
-                    </span>
-                  </div>
-                  <p className="text-sm text-gray-500 font-mono leading-relaxed mb-4">
-                    Пациент поступает с характерными жалобами после контакта с возможным источником инфекции. Проведите дифференциальную диагностику и обоснуйте лечебную тактику.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {d.symptoms.slice(0, 2).map((s, si) => (
-                      <span key={si} className="text-xs font-mono px-2.5 py-1 rounded bg-gray-50 text-gray-500 border border-gray-100">
-                        {s}
-                      </span>
-                    ))}
-                  </div>
-                  <button
-                    className="text-sm font-mono flex items-center gap-1.5 transition-all duration-200 hover:gap-2.5"
-                    style={{ color: d.color }}
-                    onClick={() => { setSelectedDisease(d); setActiveSection("theory"); }}
-                  >
-                    Изучить теорию <Icon name="ArrowRight" size={14} />
-                  </button>
-                </div>
-              ))}
-            </div>
+            <ClinicalGame />
           </div>
         </section>
       )}
