@@ -1228,7 +1228,7 @@ export default function Index() {
                 { num: "4", label: "Нозологии" },
                 { num: "12", label: "Тестовых вопросов" },
                 { num: "12", label: "Терминов" },
-                { num: "4", label: "Вкладки на тему" },
+                { num: "4", label: "Клинических случая" },
               ].map((s) => (
                 <div key={s.label} className="text-center">
                   <div className="font-cormorant text-4xl font-semibold text-gray-900">{s.num}</div>
