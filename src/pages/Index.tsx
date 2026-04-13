@@ -682,7 +682,6 @@ function ClinicalGame() {
               onClick={() => startCase(c)}
             >
               <div className="text-xs font-mono tracking-widest uppercase mb-1" style={{ color: c.color }}>{c.title}</div>
-              <div className="font-cormorant text-2xl font-semibold text-gray-900 mb-2">{c.disease}</div>
               <p className="text-sm text-gray-500 font-mono">{c.intro}</p>
               <div className="flex items-center gap-2 mt-4 text-xs font-mono text-gray-400">
                 <span>{c.steps.length} этапов</span>
@@ -693,7 +692,7 @@ function ClinicalGame() {
           ))}
           <div className="p-6 border border-dashed border-gray-200 rounded-sm flex flex-col items-center justify-center text-center min-h-32">
             <Icon name="Plus" size={28} className="text-gray-300 mb-2" />
-            <div className="font-cormorant text-lg font-semibold text-gray-400">Скоро: Малярия</div>
+            <div className="font-cormorant text-lg font-semibold text-gray-400">Скоро: новый случай</div>
             <div className="text-xs font-mono text-gray-300 mt-1">Случай в разработке</div>
           </div>
         </div>
